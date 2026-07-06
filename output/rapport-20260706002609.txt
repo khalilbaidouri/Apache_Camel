@@ -1,0 +1,7 @@
+hello khalil
+---
+this is txt file
+---
+this is xml file
+---
+this is txt file
