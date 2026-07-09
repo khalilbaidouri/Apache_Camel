@@ -18,7 +18,7 @@ public class ProducerAndConsumer {
                         .process(new Processor() {
                             @Override
                             public void process(Exchange exchange) throws Exception {
-                                //System.out.println("I m the processor ...");
+                                //System.out.println("Im the processor ...");
                                 String message =exchange.getIn().getBody(String.class);
                                 System.out.printf(message +" before \n");
                                 message = message + "_ khalil baidouri";

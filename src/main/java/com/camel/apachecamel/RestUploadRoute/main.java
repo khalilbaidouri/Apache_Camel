@@ -9,12 +9,11 @@ import org.apache.camel.impl.DefaultCamelContext;
  * @author $ {USERS}
  **/
 public class main {
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args) throws Exception {
         CamelContext context = new DefaultCamelContext();
-        RestUploadRoute restUploadRoute= new RestUploadRoute();
-        context.addRoutes(restUploadRoute);
-        while (true){
-            context.start();
-        }
+        context.addRoutes(new RestUploadRoute());
+        context.start();
+        Thread.sleep(120000);
+        context.stop();
     }
 }
